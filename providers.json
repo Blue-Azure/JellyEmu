@@ -3,9 +3,9 @@
     "name": "Vimm's Lair",
     "domain": "vimm.net",
     "searchUrl": "https://vimm.net/vault/?p=list&q={query}",
-    "searchRegex": "<td[^>]*>(?<system>[^<]+)</td>\\s*<td[^>]*>(?:<a href=\"[^\"]*\"[^>]*style=\"display:\\s*none\"[^>]*>.*?</a>\\s*|<a href\\s*=\\s*\"[^\"]*\"></a>\\s*)?<a href\\s*=\\s*\"(?<url>/vault/(?<id>\\d+))\"[^>]*>(?<title>[^<]+)</a>(?<extra>.*?)</td>(?:\\s*<td[^>]*>(?<regions>.*?)</td>\\s*<td[^>]*>(?<version>[^<]*)</td>\\s*<td[^>]*>(?<languages>[^<]*)</td>)?",
+    "searchRegex": "<tr[^>]*>\\s*<td[^>]*>(?<system>[^<]+)</td>\\s*<td[^>]*>.*?<a[^>]*href\\s*=\\s*\"(?<url>/vault/(?<id>\\d+))\"[^>]*>(?<title>[^<]+)</a>(?<extra>.*?)</td>(?:\\s*<td[^>]*>(?<regions>.*?)</td>\\s*<td[^>]*>(?<version>[^<]*)</td>\\s*<td[^>]*>(?<languages>[^<]*)</td>)?\\s*</tr>",
     "browseUrl": "https://vimm.net/vault/?p=list&system={system}&section={letter}",
-    "browseRegex": "<td[^>]*>(?:<a href=\"[^\"]*\"[^>]*style=\"display:\\s*none\"[^>]*>.*?</a>\\s*|<a href\\s*=\\s*\"[^\"]*\"></a>\\s*)?<a href\\s*=\\s*\"(?<url>/vault/(?<id>\\d+))\"[^>]*>(?<title>[^<]+)</a>(?<extra>.*?)</td>(?:\\s*<td[^>]*>(?<regions>.*?)</td>\\s*<td[^>]*>(?<version>[^<]*)</td>\\s*<td[^>]*>(?<languages>[^<]*)</td>)?",
+    "browseRegex": "<tr[^>]*>\\s*<td[^>]*>.*?</td>\\s*<td[^>]*>.*?<a[^>]*href\\s*=\\s*\"(?<url>/vault/(?<id>\\d+))\"[^>]*>(?<title>[^<]+)</a>(?<extra>.*?)</td>(?:\\s*<td[^>]*>(?<regions>.*?)</td>\\s*<td[^>]*>(?<version>[^<]*)</td>\\s*<td[^>]*>(?<languages>[^<]*)</td>)?\\s*</tr>",
     "downloadActionRegex": "<form\\s+([^>]*id=\"dl_form\"[^>]*)>",
     "downloadMediaIdRegexes": [
       "<input\\s+[^>]*name=\"mediaId\"[^>]*value=\"(?<mediaId>\\d+)\"",
